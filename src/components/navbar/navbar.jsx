@@ -7,7 +7,6 @@ const Navbar = () => {
                 <NavLink className="logo">IsOlla</NavLink>
                 <NavLink className='text-white'>|</NavLink>
                 <NavLink>About</NavLink>
-                <NavLink>Advance</NavLink>
                 <NavLink>Portofolio</NavLink>
         </div>
     );
