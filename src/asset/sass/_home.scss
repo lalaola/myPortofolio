@@ -1,0 +1,97 @@
+.home {
+    width: 100%;
+    min-height: 99vh;
+    background: linear-gradient(104.04deg, #FFD600 12.84%, rgba(255, 231, 105, 0.905486) 47.92%, #FFFFFF 86.46%);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .frame {
+        z-index: 0;
+        width: 95%;
+        min-height: 94vh;
+        background: url('../image/frame/frame.png');
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    &__content {
+        font-family: 'Lateef', 'serif';
+        line-height: 87px;
+        letter-spacing: 0.06em;
+        z-index: 1;
+    min-height: 80vh;
+        .btn-content {
+            .btn {
+                width: 158px;
+                height: 42px;
+                font-size: 21px;
+                font-weight: 400;
+            }
+
+            .btn-border {
+                border: 3px solid #FFFFFF;
+                border-radius: 10px;
+            }
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            color: #000000;
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        h3 {
+            font-family: 'Inter';
+            font-weight: 300;
+            font-size: 38px;
+            line-height: 58px;
+            letter-spacing: 0.03em;
+            color: #161616;
+            text-align: center;
+        }
+    }
+
+    &__h1Footer {
+        font-family: 'Jura';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 73px;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.33);
+    }
+}
+
+.homepage {
+    overflow: hidden;
+    width: 100vw;
+    background: linear-gradient(119.18deg, #F34F4F 0.65%, #F29322 55.01%, #FFFFFF 103.99%, rgba(152, 98, 58, 0) 103.99%);
+    background-blend-mode: color-dodge;
+}
+
+
+// media quary
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .home {
+        &__content {
+            flex-direction: column-reverse;
+        }
+    }
+
+}
