@@ -1,4 +1,6 @@
 .navbar {
+    position: sticky;
+  
     .logo {
         font-weight: 600;
     }
@@ -52,22 +54,17 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .sidebar {
-        .wrab-sidebar {
-            background-color: $yellow;
-            height: 100%;
-            width: 70vw;
-        }
-    }
 
-    .toggle {
-        display: block;
-        position: absolute;
-        right: 0;
+@media only screen and (max-width: 568px) {
+    .navbar{
+        position: fixed;
+        top: 2.6rem;
+        left: 50%;
+     transform: translate(-50%, -50%);
     }
-
-    .navbar {
-        display: none;
+    .navbar.col-10.col-md-4.mx-auto.d-flex.justify-content-between.mt-3 {
+        background: beige;
+        padding-right: 2rem;
+        padding-left: 2rem;
     }
 }

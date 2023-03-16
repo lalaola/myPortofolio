@@ -53,8 +53,8 @@
         h3 {
             font-family: 'Inter';
             font-weight: 300;
-            font-size: 38px;
-            line-height: 58px;
+            font-size: 35px;
+            line-height: 48px;
             letter-spacing: 0.03em;
             color: #161616;
             text-align: center;
@@ -84,12 +84,24 @@
 // media quary
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .home {
+        &__content {
+            h3{
+                font-size: 32px;
+                line-height: 43px;
+            }
+        }
+    }
+
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
     .home {
         &__content {
+            padding-top: 5rem;
             flex-direction: column-reverse;
         }
     }

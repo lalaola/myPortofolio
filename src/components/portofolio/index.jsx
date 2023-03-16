@@ -10,12 +10,12 @@ const Index = () => {
         setNav(e.target.id)
     }
     return (
-        <div className='porto col-10 mx-auto  mt-5'>
-            <div className='d-flex align-items-center justify-content-between mt-4 '>
+        <div id="porto" className='porto col-10 mx-auto  mt-5'>
+            <div className='d-flex flex-porto align-items-center justify-content-between mt-4 '>
                 <li>
                     <h1>Portofolio</h1>
                 </li>
-                <li className=' col-4 d-flex  justify-content-between'>
+                <li className=' col-10 col-lg-4 col-md-6 d-flex  justify-content-between'>
                     <NavLink id='react' onClick={handleNav}>React.Js</NavLink>
                     <NavLink id='laravel' onClick={handleNav}>Laravel</NavLink>
                     <NavLink id='design' onClick={handleNav}>Web Design</NavLink>
@@ -25,7 +25,7 @@ const Index = () => {
             <div>
                 {data.filter(data => data.katagori.includes(nav)).map((data, index) => {
                     return (
-                        <Card key={index} foto={data.foto} nama={data.nama} use={data.use} durasi={data.duration} desc={data.desc}/>
+                        <Card key={index} foto={data.foto} link={data.link} nama={data.nama} use={data.use} durasi={data.duration} desc={data.desc}/>
                     );
                 })
                 }

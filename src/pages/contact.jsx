@@ -28,10 +28,10 @@ const Contact = () => {
     }
 
     return (
-        <div className='contact mx-auto pb-5'>
+        <div id='contact' className='contact mx-auto pb-5'>
             <h1><span className='text-white'>Contact</span> Me</h1>
             <form ref={form} onSubmit={sendEmail} className="wrap-contect mt-4 d-flex justify-content-between align-items-center">
-                <div className="col-6">
+                <div className="col-md-6 col-12">
                     <div className="mb-3">
                         <label htmlFor="exampleFormControlInput3" className="form-label">Enter Subject</label>
                         <input name="user_subject" type="text" className="form-control" id="exampleFormControlInput3" placeholder="subject" />
@@ -50,7 +50,7 @@ const Contact = () => {
                     </div>
                     <button className="btn btn-warning">Send Message</button>
                 </div>
-                <div className="col-5 ">
+                <div className="col-md-5 col-12 ">
                     <h3> -- If you have questions about me or want to submit Information, Suggestions, Experiences with me , please fill out the form next to this.
                     </h3>
                 </div>

@@ -8,7 +8,7 @@
     h2 {
         font-weight: 700;
         font-size: 44px;
-        line-height: 77px;
+        line-height: 47px;
         letter-spacing: 0.07em;
         text-align: center;
         color: #000000;
@@ -18,7 +18,7 @@
     h3 {
         font-weight: 300;
         font-size: 30px;
-        line-height: 77px;
+        line-height: 57px;
         text-align: center;
         letter-spacing: 0.03em;
         color: #000000;
@@ -31,13 +31,15 @@
         text-align: center;
         letter-spacing: 0.03em;
     }
-    .foto{
+
+    .foto {
         width: 25%;
     }
-    .text{
-        padding-right: 5rem;
-        margin-right: 5rem;
+
+    .text {
+        margin-left: 2rem;
     }
+
     &__content {
         width: 100vw;
 
@@ -128,8 +130,19 @@
 
 @media only screen and (max-width: 768px) {
     .about {
+        flex-direction: column;
+
+        .foto {
+            width: 40%;
+        }
+
+        .text {
+            margin-left: 0;
+            margin-top: 2rem;
+
+        }
+
         .isi-about {
-            flex-direction: column-reverse;
 
             p {
                 font-size: 18px;

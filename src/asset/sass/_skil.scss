@@ -1,6 +1,10 @@
 .skill{
+    .flex-wrap  {
+        justify-content: space-between;
+    }
     h1{
         border-bottom: 3px solid #FFD600;
+        width: 180px;
     }
     width: 100%;
     background-color: white;
@@ -10,4 +14,14 @@
         height: 200px;
         width: 200px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+    .skill{
+        .flex-wrap  {
+            justify-content: center;
+        }
+    }
+
+
 }

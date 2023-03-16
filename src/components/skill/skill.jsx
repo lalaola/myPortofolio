@@ -8,7 +8,7 @@ const Skill = () => {
     return (
         <div className='skill mt-5 py-3 '>
             <h1 className='text-center mx-auto'>Advance</h1>
-            <div className="d-flex flex-wrap justify-content-between col-10 mx-auto">
+            <div className="d-flex flex-wrap  col-10 mx-auto">
                 <div className="col-6 col-md-3  d-flex flex-column align-items-center">
                     <div className="col-10">
                         <img src={html} alt="html" className='img-fluid' />
